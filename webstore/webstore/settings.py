@@ -26,6 +26,11 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
+LANGUAGES = [
+    ('ru', 'Russian'),
+    ('en', 'English'),
+]
+
 # Application definition
 
 INSTALLED_APPS = [

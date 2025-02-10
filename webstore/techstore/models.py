@@ -1,8 +1,8 @@
 from django.utils.text import slugify
-from googletrans import Translator
-
 from django.db import models
 from django.urls import reverse_lazy
+
+from .functions import translate
 
 
 # Create your models here.
@@ -19,8 +19,9 @@ class Category(models.Model):
 
     def save(self, *args, **kwargs):
         if not self.title_en:
-            translator = Translator()
-            self.title_en = translator.translate(self.title_ru, dest='en').text
+            self.title_en = translate(self.title_ru, src='ru', dest='en')
+        if not self.title_ru:
+            self.title_ru = translate(self.title_en, src='en', dest='ru')
         self.slug = slugify(self.title_en)
         super().save(*args, **kwargs)
 

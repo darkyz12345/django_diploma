@@ -4,6 +4,6 @@ from .models import *
 
 @admin.register(Category)
 class CategoryAdmin(admin.ModelAdmin):
-    list_display = ('pk', 'title_ru', 'title_ru', 'parent')
-    # list_display_links = ('pk', 'title_ru', 'title_en')
+    list_display = ('pk', 'title_ru', 'title_en', 'parent')
+    list_display_links = ('pk', 'title_ru', 'title_en')
     prepopulated_fields = {'slug': ('title_ru', )}

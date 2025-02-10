@@ -1,0 +1,51 @@
+{% load static %}
+{% load i18n %}
+{% get_current_language as CURRENT_LANG %}
+<div class="header-top hidden-xs">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <div class="top-menu">
+                    <!-- Start Language -->
+                    <ul class="language">
+                        <li>
+                            {% if CURRENT_LANG == 'ru' %}
+                            <a><img class="right-5" src="{% static 'techstore/img/flags/ru.png' %}"
+                                             width="25px" alt="#">Русский<i
+                                class="fa fa-caret-down left-5"></i></a>
+                            {% else %}
+                            <a><img class="right-5" src="{% static 'techstore/img/flags/gb.png' %}"
+                                             width="25px" alt="#">English<i
+                                class="fa fa-caret-down left-5"></i></a>
+                            {% endif %}
+                            <ul>
+                                {% if CURRENT_LANG == 'ru' %}
+                                <li><a href="/en/"><img class="right-5" src="{% static 'techstore/img/flags/gb.png' %}"
+                                                     width="15px" alt="#">Английский</a></li>
+                                {% else %}
+                                <li><a href="/ru/"><img class="right-5" src="{% static 'techstore/img/flags/ru.png' %}"
+                                                     width="15px" alt="#">Russian</a></li>
+                                {% endif %}
+                            </ul>
+                        </li>
+                    </ul>
+                    <!-- End Language -->
+                    <!-- Start Currency -->
+
+                    <!-- End Currency -->
+                    <p class="welcome-msg">{% trans "Hello msg" %}</p>
+                </div>
+                <!-- Start Top-Link -->
+                <div class="top-link">
+                    <ul class="link">
+                        <li><a href="my-account.html"><i class="fa fa-user"></i>{% trans "my account" %}</a></li>
+                        <li><a href="wishlist.html"><i class="fa fa-heart"></i>{% trans "wishlist" %}</a></li>
+                        <li><a href="checkout.html"><i class="fa fa-share"></i> {% trans "checkout" %}}</a></li>
+                        <li><a href="account.html"><i class="fa fa-unlock-alt"></i>{% trans "login" %}</a></li>
+                    </ul>
+                </div>
+                <!-- End Top-Link -->
+            </div>
+        </div>
+    </div>
+</div>

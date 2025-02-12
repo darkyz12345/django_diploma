@@ -1,3 +1,5 @@
+{% load static %}
+{% load i18n %}
 <!doctype html>
 <html class="no-js" lang="">
 <head>
@@ -24,335 +26,18 @@
     {% include 'base_components/_header_middle.html' %}
     <!-- HEADER-MIDDLE END -->
     <!-- START MAINMENU-AREA -->
-    <div class="mainmenu-area">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="mainmenu hidden-sm hidden-xs">
-                        <nav>
-                            <ul>
-                                <li><a href="index.html">Home</a>
-                                    <ul>
-                                        <li><a href="index.html">Home Versions 1</a></li>
-                                        <li><a href="index-2.html">Home Versions 2</a></li>
-                                    </ul>
-                                </li>
-                                <li><a href="about.html">About Us</a></li>
-                                <li class="hot"><a href="shop.html">Bestseller Products</a></li>
-                                <li class="new"><a href="shop-list.html">New Products</a></li>
-                                <li><a href="shop.html">Special Products</a></li>
-                                <li><a href="#">Pages</a>
-                                    <ul>
-                                        <li><a href="cart.html">Cart</a></li>
-                                        <li><a href="checkout.html">Checkout</a></li>
-                                        <li><a href="account.html">Create Account</a></li>
-                                        <li><a href="my-account.html">My Account</a></li>
-                                        <li><a href="product-details.html">Product details</a></li>
-                                        <li><a href="shop.html">Shop Grid View</a></li>
-                                        <li><a href="shop-list.html">Shop List View</a></li>
-                                        <li><a href="wishlist.html">Wish List</a></li>
-                                    </ul>
-                                </li>
-                                <li><a href="contact.html">Contact Us</a></li>
-                            </ul>
-                        </nav>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+    {% include 'base_components/main_menu.html' %}
     <!-- END MAIN-MENU-AREA -->
     <!-- Start Mobile-menu -->
-    <div class="mobile-menu-area hidden-md hidden-lg">
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-12">
-                    <nav id="mobile-menu">
-                        <ul>
-                            <li><a href="index.html">Home</a>
-                                <ul>
-                                    <li><a href="index.html">Home Page 1</a></li>
-                                    <li><a href="index-2.html">Home Page 2</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="about.html">About Us</a></li>
-                            <li><a href="shop.html">Bestseller Products</a></li>
-                            <li><a href="shop-list.html">New Products</a></li>
-                            <li><a href="#">Pages</a>
-                                <ul>
-                                    <li><a href="cart.html">Cart</a></li>
-                                    <li><a href="checkout.html">Checkout</a></li>
-                                    <li><a href="account.html">Create Account</a></li>
-                                    <li><a href="login.html">Login</a></li>
-                                    <li><a href="my-account.html">My Account</a></li>
-                                    <li><a href="product-details.html">Product details</a></li>
-                                    <li><a href="shop.html">Shop Grid View</a></li>
-                                    <li><a href="shop-list.html">Shop List View</a></li>
-                                    <li><a href="wishlist.html">Wish List</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="contact.html">Contact Us</a></li>
-                        </ul>
-                    </nav>
-                </div>
-            </div>
-        </div>
-    </div>
+    {% include 'base_components/mobile_menu.html' %}
+
     <!-- End Mobile-menu -->
 </header>
 <!-- HEADER AREA END -->
 <!-- Category slider area start -->
-<div class="category-slider-area">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-3">
-                <!-- CATEGORY-MENU-LIST START -->
-                <div class="left-category-menu hidden-sm hidden-xs">
-                    <div class="left-product-cat">
-                        <div class="category-heading">
-                            <h2>categories</h2>
-                        </div>
-                        <div class="category-menu-list">
-                            <ul>
-                                <!-- Single menu start -->
-                                <li class="arrow-plus">
-                                    <a href="shop.html">Cameras & Photography</a>
-                                    <!--  MEGA MENU START -->
-                                    <div class="cat-left-drop-menu">
-                                        <div class="cat-left-drop-menu-left">
-                                            <a class="menu-item-heading" href="#">Handbags</a>
-                                            <ul>
-                                                <li><a href="#">Blouses And Shirts</a></li>
-                                                <li><a href="#">Clutches</a></li>
-                                                <li><a href="#">Cross Body</a></li>
-                                                <li><a href="#">Satchels</a></li>
-                                                <li><a href="#">Sholuder</a></li>
-                                                <li><a href="#">Toter</a></li>
-                                            </ul>
-                                        </div>
-                                        <div class="cat-left-drop-menu-left">
-                                            <a class="menu-item-heading" href="#">Tops</a>
-                                            <ul>
-                                                <li><a href="#">Evening</a></li>
-                                                <li><a href="#">Long Sleeved</a></li>
-                                                <li><a href="#">Short Sleeved</a></li>
-                                                <li><a href="#">Sleeveless</a></li>
-                                                <li><a href="#">T-Shirts</a></li>
-                                                <li><a href="#">Tanks And Camis</a></li>
-                                            </ul>
-                                        </div>
-                                        <div class="cat-left-drop-menu-left">
-                                            <a class="menu-item-heading" href="#">Dresses</a>
-                                            <ul>
-                                                <li><a href="#">Belts</a></li>
-                                                <li><a href="#">Cocktail</a></li>
-                                                <li><a href="#">Day</a></li>
-                                                <li><a href="#">Evening</a></li>
-                                                <li><a href="#">Sundresses</a></li>
-                                                <li><a href="#">Sweater</a></li>
-                                            </ul>
-                                        </div>
-                                        <div class="cat-left-drop-menu-left">
-                                            <a class="menu-item-heading" href="#">Accessories</a>
-                                            <ul>
-                                                <li><a href="#">Bras</a></li>
-                                                <li><a href="#">Hair Accessories</a></li>
-                                                <li><a href="#">Hats And Gloves</a></li>
-                                                <li><a href="#">Lifestyle</a></li>
-                                                <li><a href="#">Scarves</a></li>
-                                                <li><a href="#">Small Leathers</a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <!-- MEGA MENU END -->
-                                </li>
-                                <!-- Single menu end -->
-                                <!-- Single menu start -->
-                                <li class="arrow-plus">
-                                    <a href="shop.html">Tv & Audio</a>
-                                    <!--  MEGA MENU START -->
-                                    <div class="cat-left-drop-menu">
-                                        <div class="cat-left-drop-menu-left">
-                                            <a class="menu-item-heading" href="#">BAGS</a>
-                                            <ul>
-                                                <li><a href="#">Blazers</a></li>
-                                                <li><a href="#">Bootees Bags</a></li>
-                                                <li><a href="#">Jackets</a></li>
-                                                <li><a href="#">Shoes</a></li>
-                                            </ul>
-                                        </div>
-                                        <div class="cat-left-drop-menu-left">
-                                            <a class="menu-item-heading" href="#">CLOTHING</a>
-                                            <ul>
-                                                <li><a href="#">Blazers</a></li>
-                                                <li><a href="#">Bootees Bags</a></li>
-                                                <li><a href="#">Jackets</a></li>
-                                                <li><a href="#">Shoes</a></li>
-                                            </ul>
-                                        </div>
-                                        <div class="cat-left-drop-menu-left">
-                                            <a class="menu-item-heading" href="#">LINGERIE</a>
-                                            <ul>
-                                                <li><a href="#">Blazers</a></li>
-                                                <li><a href="#">Bootees Bags</a></li>
-                                                <li><a href="#">Jackets</a></li>
-                                                <li><a href="#">Shoes</a></li>
-                                            </ul>
-                                        </div>
-                                        <div class="cat-left-drop-menu-left">
-                                            <a class="menu-item-heading" href="#">Shoes</a>
-                                            <ul>
-                                                <li><a href="#">Blazers</a></li>
-                                                <li><a href="#">Bootees Bags</a></li>
-                                                <li><a href="#">Jackets</a></li>
-                                                <li><a href="#">Shoes</a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <!-- MEGA MENU END -->
-                                </li>
-                                <!-- Single menu end -->
-                                <!-- Single menu start -->
-                                <li class="arrow-plus">
-                                    <a href="shop.html">SmartPhones & Tablets</a>
-                                    <!--  MEGA MENU START -->
-                                    <div class="cat-left-drop-menu cat-left-drop-menu-photo-contain">
-                                        <div class="cat-left-drop-menu-left">
-                                            <a class="menu-item-heading" href="#">Women</a>
-                                            <ul>
-                                                <li><a href="#">Belts</a></li>
-                                                <li><a href="#">Jewelry</a></li>
-                                                <li><a href="#">Socks</a></li>
-                                                <li><a href="#">Sunglasses</a></li>
-                                            </ul>
-                                        </div>
-                                        <div class="cat-left-drop-menu-left">
-                                            <a class="menu-item-heading" href="#">CLOTHING</a>
-                                            <ul>
-                                                <li><a href="#">Boots</a></li>
-                                                <li><a href="#">Brands We Love</a></li>
-                                                <li><a href="#">Casuals</a></li>
-                                                <li><a href="#">Gifts And Tech</a></li>
-                                                <li><a href="#">Gifts And Tech</a></li>
-                                                <li><a href="#">Slippers</a></li>
-                                                <li><a href="#">Speakers</a></li>
-                                            </ul>
-                                        </div>
-                                        <div class="cat-left-drop-menu-left cat-left-drop-menu-photo">
-                                            <a href="#"><img src="img/megamenu/vmega_blog1.jpg" alt="Product"></a>
-                                        </div>
-                                    </div>
-                                    <!-- MEGA MENU END -->
-                                </li>
-                                <!-- Single menu end -->
-                                <!-- Single menu start -->
-                                <li>
-                                    <a href="shop.html">Laptop & Computer</a>
-                                </li>
-                                <!-- Single menu end -->
-                                <!-- Single menu start -->
-                                <li><a href="shop.html">Sony</a></li>
-                                <!-- Single menu end -->
-                                <!-- Single menu start -->
-                                <li><a href="shop.html">Mobile</a></li>
-                                <!-- Single menu end -->
-                                <!-- Single menu start -->
-                                <li><a href="shop.html">Sports</a></li>
-                                <!-- Single menu end -->
-
-                                <!-- MENU ACCORDION START -->
-                                <li class=" rx-child">
-                                    <a href="shop.html">Books</a>
-                                </li>
-                                <li class=" rx-parent">
-                                    <a class="rx-default">
-                                        More categories <span class="cat-thumb  fa fa-plus"></span>
-                                    </a>
-                                    <a class="rx-show">
-                                        close menu <span class="cat-thumb  fa fa-minus"></span>
-                                    </a>
-                                </li>
-                                <!-- MENU ACCORDION END -->
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <!-- END CATEGORY-MENU-LIST -->
-            </div>
-            <div class="col-md-9">
-                <!-- slider -->
-                <div class="slider-area">
-                    <div class="bend niceties preview-1">
-                        <div id="ensign-nivoslider" class="slides">
-                            <img src="img/sliders/slider-1/bg1.jpg" alt="Malias" title="#slider-direction-1"/>
-                            <img src="img/sliders/slider-1/bg2.jpg" alt="Malias" title="#slider-direction-2"/>
-                            <img src="img/sliders/slider-1/bg3.jpg" alt="Malias" title="#slider-direction-3"/><!--
-									<img src="img/sliders/slider-1/bg4.jpg" alt="" title="#slider-direction-4"/>  -->
-                        </div>
-                        <!-- direction 1 -->
-                        <div id="slider-direction-1" class="t-lfr slider-direction">
-                            <div class="slider-progress"></div>
-                            <!-- layer 1 -->
-                            <div class="layer-1-1 ">
-                                <h1 class="title1">LUMIA 888 DESIGN</h1>
-                            </div>
-                            <!-- layer 2 -->
-                            <div class="layer-1-2">
-                                <p class="title2">Elegant design for business</p>
-                            </div>
-                            <!-- layer 3 -->
-                            <div class="layer-1-3">
-                                <h2 class="title3">$966.82</h2>
-                            </div>
-                            <!-- layer 4 -->
-                            <div class="layer-1-4">
-                                <a href="#" class="title4">shopping now</a>
-                            </div>
-                        </div>
-                        <!-- direction 2 -->
-                        <div id="slider-direction-2" class="slider-direction">
-                            <div class="slider-progress"></div>
-                            <!-- layer 1 -->
-                            <div class="layer-2-1">
-                                <h1 class="title1">WATERPROOF SMARTPHONE</h1>
-                            </div>
-                            <!-- layer 2 -->
-                            <div class="layer-2-2">
-                                <p class="title2">RODUCTS ARE EYE-CATCHING DESIGN. YOU CAN TAKE PHOTOS EVEN WHEN Y</p>
-                            </div>
-                            <!-- layer 3 -->
-                            <div class="layer-2-3">
-                                <a href="#" class="title3">shopping now</a>
-                            </div>
-                        </div>
-                        <!-- direction 3 -->
-                        <div id="slider-direction-3" class="slider-direction">
-                            <div class="slider-progress"></div>
-                            <!-- layer 1 -->
-                            <div class="layer-3-1">
-                                <h2 class="title1">BUY AIR LACOTE</h2>
-                            </div>
-                            <!-- layer 2 -->
-                            <div class="layer-3-2">
-                                <h1 class="title2">SUPER TABLET, SUPER GIFT</h1>
-                            </div>
-                            <!-- layer 3 -->
-                            <div class="layer-3-3">
-                                <p class="title3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                    eiusmod tempor incididunt ut labore et.</p>
-                            </div>
-                            <!-- layer 4 -->
-                            <div class="layer-3-4">
-                                <a href="#" class="title4">shopping now</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- slider end-->
-            </div>
-        </div>
-    </div>
-</div>
+{% block slider %}
+{% include 'base_components/_slider.html' %}
+{% endblock slider %}
 <!-- Category slider area End -->
 <!-- START PAGE-CONTENT -->
 <section class="page-content">
@@ -374,7 +59,7 @@
                             <div class="col-xs-12">
                                 <div class="single-hot-deals">
                                     <div class="hot-deals-photo">
-                                        <a href="#"><img src="img/hot-deals/1.jpg" alt="Product"></a>
+                                        <a href="#"><img src="{% static 'techstore/img/hot-deals/1.jpg' %}" alt="Product"></a>
                                     </div>
                                     <div class="count-down">
                                         <div class="timer">
@@ -398,7 +83,7 @@
                             <div class="col-xs-12">
                                 <div class="single-hot-deals">
                                     <div class="hot-deals-photo">
-                                        <a href="#"><img src="img/hot-deals/2.jpg" alt="Product"></a>
+                                        <a href="#"><img src="{% static 'techstore/img/hot-deals/2.jpg' %}" alt="Product"></a>
                                     </div>
                                     <div class="count-down">
                                         <div class="timer">
@@ -422,7 +107,7 @@
                             <div class="col-xs-12">
                                 <div class="single-hot-deals">
                                     <div class="hot-deals-photo">
-                                        <a href="#"><img src="img/hot-deals/3.jpg" alt="Product"></a>
+                                        <a href="#"><img src="{% static 'techstore/img/hot-deals/3.jpg' %}" alt="Product"></a>
                                     </div>
                                     <div class="count-down">
                                         <div class="timer">
@@ -462,7 +147,7 @@
                                 <div class="single-product">
                                     <div class="product-img">
                                         <a href="#">
-                                            <img class="primary-img" src="img/product/small/1.jpg" alt="Product">
+                                            <img class="primary-img" src="{% static 'techstore/img/product/small/1.jpg' %}" alt="Product">
                                         </a>
                                     </div>
                                     <div class="product-description">
@@ -485,7 +170,7 @@
                                 <div class="single-product">
                                     <div class="product-img">
                                         <a href="#">
-                                            <img class="primary-img" src="img/product/small/2.jpg" alt="Product">
+                                            <img class="primary-img" src="{% static 'techstore/img/product/small/2.jpg' %}" alt="Product">
                                         </a>
                                     </div>
                                     <div class="product-description">
@@ -508,7 +193,7 @@
                                 <div class="single-product">
                                     <div class="product-img">
                                         <a href="#">
-                                            <img class="primary-img" src="img/product/small/3.jpg" alt="Product">
+                                            <img class="primary-img" src="{% static 'techstore/img/product/small/3.jpg' %}" alt="Product">
                                         </a>
                                     </div>
                                     <div class="product-description">
@@ -531,7 +216,7 @@
                                 <div class="single-product">
                                     <div class="product-img">
                                         <a href="#">
-                                            <img class="primary-img" src="img/product/small/4.jpg" alt="Product">
+                                            <img class="primary-img" src="{% static 'techstore/img/product/small/4.jpg' %}" alt="Product">
                                         </a>
                                     </div>
                                     <div class="product-description">
@@ -556,7 +241,7 @@
                                 <div class="single-product">
                                     <div class="product-img">
                                         <a href="#">
-                                            <img class="primary-img" src="img/product/small/5.jpg" alt="Product">
+                                            <img class="primary-img" src="{% static 'techstore/img/product/small/5.jpg' %}" alt="Product">
                                         </a>
                                     </div>
                                     <div class="product-description">
@@ -579,7 +264,7 @@
                                 <div class="single-product">
                                     <div class="product-img">
                                         <a href="#">
-                                            <img class="primary-img" src="img/product/small/6.jpg" alt="Product">
+                                            <img class="primary-img" src="{% static 'techstore/img/product/small/6.jpg' %}" alt="Product">
                                         </a>
                                     </div>
                                     <div class="product-description">
@@ -602,7 +287,7 @@
                                 <div class="single-product">
                                     <div class="product-img">
                                         <a href="#">
-                                            <img class="primary-img" src="img/product/small/7.jpg" alt="Product">
+                                            <img class="primary-img" src="{% static 'techstore/img/product/small/7.jpg' %}" alt="Product">
                                         </a>
                                     </div>
                                     <div class="product-description">
@@ -625,7 +310,7 @@
                                 <div class="single-product">
                                     <div class="product-img">
                                         <a href="#">
-                                            <img class="primary-img" src="img/product/small/8.jpg" alt="Product">
+                                            <img class="primary-img" src="{% static 'techstore/img/product/small/8.jpg' %}" alt="Product">
                                         </a>
                                     </div>
                                     <div class="product-description">
@@ -655,10 +340,10 @@
                 <div class="sidebar-banner">
                     <div class="active-sidebar-banner">
                         <div class="single-sidebar-banner">
-                            <a href="#"><img src="img/banner/1.jpg" alt="Product Banner"></a>
+                            <a href="#"><img src="{% static 'techstore/img/banner/1.jpg' %}" alt="Product Banner"></a>
                         </div>
                         <div class="single-sidebar-banner">
-                            <a href="#"><img src="img/banner/2.jpg" alt="Product Banner"></a>
+                            <a href="#"><img src="{% static 'techstore/img/banner/2.jpg' %}" alt="Product Banner"></a>
                         </div>
                     </div>
                 </div>
@@ -676,7 +361,7 @@
                             <div class="col-xs-12">
                                 <div class="single-recent-posts">
                                     <div class="recent-posts-photo">
-                                        <img src="img/posts/1.jpg" alt="Recent Posts">
+                                        <img src="{% static 'techstore/img/posts/1.jpg' %}" alt="Recent Posts">
                                     </div>
                                     <div class="recent-posts-text">
                                         <h5><a href="#" class="recent-posts-title">swimwear for women</a></h5>
@@ -692,7 +377,7 @@
                             <div class="col-xs-12">
                                 <div class="single-recent-posts">
                                     <div class="recent-posts-photo">
-                                        <img src="img/posts/2.jpg" alt="Recent Posts">
+                                        <img src="{% static 'techstore/img/posts/2.jpg' %}" alt="Recent Posts">
                                     </div>
                                     <div class="recent-posts-text">
                                         <h5><a href="#" class="recent-posts-title">swimwear for women</a></h5>
@@ -708,7 +393,7 @@
                             <div class="col-xs-12">
                                 <div class="single-recent-posts">
                                     <div class="recent-posts-photo">
-                                        <img src="img/posts/3.jpg" alt="Recent Posts">
+                                        <img src="{% static 'techstore/img/posts/3.jpg' %}" alt="Recent Posts">
                                     </div>
                                     <div class="recent-posts-text">
                                         <h5><a href="#" class="recent-posts-title">swimwear for women</a></h5>
@@ -724,7 +409,7 @@
                             <div class="col-xs-12">
                                 <div class="single-recent-posts">
                                     <div class="recent-posts-photo">
-                                        <img src="img/posts/4.jpg" alt="Recent Posts">
+                                        <img src="{% static 'techstore/img/posts/4.jpg' %}" alt="Recent Posts">
                                     </div>
                                     <div class="recent-posts-text">
                                         <h5><a href="#" class="recent-posts-title">swimwear for women</a></h5>
@@ -740,7 +425,7 @@
                             <div class="col-xs-12">
                                 <div class="single-recent-posts">
                                     <div class="recent-posts-photo">
-                                        <img src="img/posts/1.jpg" alt="Recent Posts">
+                                        <img src="{% static 'techstore/img/posts/1.jpg' %}" alt="Recent Posts">
                                     </div>
                                     <div class="recent-posts-text">
                                         <h5><a href="#" class="recent-posts-title">swimwear for women</a></h5>
@@ -824,10 +509,10 @@
                                                         </div>
                                                         <div class="product-img">
                                                             <a href="#">
-                                                                <img class="primary-img" src="img/product/mediam/12.jpg"
+                                                                <img class="primary-img" src="{% static 'techstore/img/product/mediam/12.jpg' %}"
                                                                      alt="Product">
                                                                 <img class="secondary-img"
-                                                                     src="img/product/mediam/12bg.jpg" alt="Product">
+                                                                     src="{% static 'techstore/img/product/mediam/12bg.jpg' %}" alt="Product">
                                                             </a>
                                                         </div>
                                                         <div class="product-description">
@@ -875,9 +560,9 @@
                                                         <div class="product-img">
                                                             <a href="#">
                                                                 <img class="primary-img"
-                                                                     src="img/product/mediam/12bg.jpg" alt="Product">
+                                                                     src="{% static 'techstore/img/product/mediam/12bg.jpg' %}" alt="Product">
                                                                 <img class="secondary-img"
-                                                                     src="img/product/mediam/12.jpg" alt="Product">
+                                                                     src="{% static 'techstore/img/product/mediam/12.jpg' %}" alt="Product">
                                                             </a>
                                                         </div>
                                                         <div class="product-description">
@@ -923,10 +608,10 @@
                                                     <div class="single-product">
                                                         <div class="product-img">
                                                             <a href="#">
-                                                                <img class="primary-img" src="img/product/mediam/2.jpg"
+                                                                <img class="primary-img" src="{% static 'techstore/img/product/mediam/2.jpg' %}"
                                                                      alt="Product">
                                                                 <img class="secondary-img"
-                                                                     src="img/product/mediam/2bg.jpg" alt="Product">
+                                                                     src="{% static 'techstore/img/product/mediam/2bg.jpg' %}" alt="Product">
                                                             </a>
                                                         </div>
                                                         <div class="product-description">
@@ -973,9 +658,9 @@
                                                         <div class="product-img">
                                                             <a href="#">
                                                                 <img class="primary-img"
-                                                                     src="img/product/mediam/2bg.jpg" alt="Product">
+                                                                     src="{% static 'techstore/img/product/mediam/2bg.jpg' %}" alt="Product">
                                                                 <img class="secondary-img"
-                                                                     src="img/product/mediam/2.jpg" alt="Product">
+                                                                     src="{% static 'techstore/img/product/mediam/2bg.jpg' %}" alt="Product">
                                                             </a>
                                                         </div>
                                                         <div class="product-description">
@@ -1024,10 +709,10 @@
                                                         </div>
                                                         <div class="product-img">
                                                             <a href="#">
-                                                                <img class="primary-img" src="img/product/mediam/5.jpg"
+                                                                <img class="primary-img" src="{% static 'techstore/img/product/mediam/2bg.jpg' %}"
                                                                      alt="Product">
                                                                 <img class="secondary-img"
-                                                                     src="img/product/mediam/3bg.jpg" alt="Product">
+                                                                     src="{% static 'techstore/img/product/mediam/2bg.jpg' %}" alt="Product">
                                                             </a>
                                                         </div>
                                                         <div class="product-description">
@@ -1076,10 +761,10 @@
                                                         </div>
                                                         <div class="product-img">
                                                             <a href="#">
-                                                                <img class="primary-img" src="img/product/mediam/6.jpg"
+                                                                <img class="primary-img" src="{% static 'techstore/img/product/mediam/2bg.jpg' %}"
                                                                      alt="Product">
                                                                 <img class="secondary-img"
-                                                                     src="img/product/mediam/4bg.jpg" alt="Product">
+                                                                     src="{% static 'techstore/img/product/mediam/2bg.jpg' %}" alt="Product">
                                                             </a>
                                                         </div>
                                                         <div class="product-description">
@@ -1139,10 +824,10 @@
                                                         </div>
                                                         <div class="product-img">
                                                             <a href="#">
-                                                                <img class="primary-img" src="img/product/mediam/3.jpg"
+                                                                <img class="primary-img" src="{% static 'techstore/img/product/mediam/2bg.jpg' %}"
                                                                      alt="Product">
                                                                 <img class="secondary-img"
-                                                                     src="img/product/mediam/3bg.jpg" alt="Product">
+                                                                     src="{% static 'techstore/img/product/mediam/2bg.jpg' %}" alt="Product">
                                                             </a>
                                                         </div>
                                                         <div class="product-description">
@@ -1191,10 +876,10 @@
                                                         </div>
                                                         <div class="product-img">
                                                             <a href="#">
-                                                                <img class="primary-img" src="img/product/mediam/2.jpg"
+                                                                <img class="primary-img" src="{% static 'techstore/img/product/mediam/2bg.jpg' %}"
                                                                      alt="Product">
                                                                 <img class="secondary-img"
-                                                                     src="img/product/mediam/2bg.jpg" alt="Product">
+                                                                     src="{% static 'techstore/img/product/mediam/2bg.jpg' %}" alt="Product">
                                                             </a>
                                                         </div>
                                                         <div class="product-description">
@@ -1240,10 +925,10 @@
                                                     <div class="single-product">
                                                         <div class="product-img">
                                                             <a href="#">
-                                                                <img class="primary-img" src="img/product/mediam/1.jpg"
+                                                                <img class="primary-img" src="{% static 'techstore/img/product/mediam/2bg.jpg' %}"
                                                                      alt="Product">
                                                                 <img class="secondary-img"
-                                                                     src="img/product/mediam/1bg.jpg" alt="Product">
+                                                                     src="{% static 'techstore/img/product/mediam/2bg.jpg' %}" alt="Product">
                                                             </a>
                                                         </div>
                                                         <div class="product-description">
@@ -1289,10 +974,10 @@
                                                     <div class="single-product">
                                                         <div class="product-img">
                                                             <a href="#">
-                                                                <img class="primary-img" src="img/product/mediam/4.jpg"
+                                                                <img class="primary-img" src="{% static 'techstore/img/product/mediam/2bg.jpg' %}"
                                                                      alt="Product">
                                                                 <img class="secondary-img"
-                                                                     src="img/product/mediam/4bg.jpg" alt="Product">
+                                                                     src="{% static 'techstore/img/product/mediam/2bg.jpg' %}" alt="Product">
                                                             </a>
                                                         </div>
                                                         <div class="product-description">
@@ -1341,10 +1026,10 @@
                                                         </div>
                                                         <div class="product-img">
                                                             <a href="#">
-                                                                <img class="primary-img" src="img/product/mediam/5.jpg"
+                                                                <img class="primary-img" src="{% static 'techstore/img/product/mediam/2bg.jpg' %}"
                                                                      alt="Product">
                                                                 <img class="secondary-img"
-                                                                     src="img/product/mediam/3bg.jpg" alt="Product">
+                                                                     src="{% static 'techstore/img/product/mediam/2bg.jpg' %}" alt="Product">
                                                             </a>
                                                         </div>
                                                         <div class="product-description">
@@ -1393,10 +1078,10 @@
                                                         </div>
                                                         <div class="product-img">
                                                             <a href="#">
-                                                                <img class="primary-img" src="img/product/mediam/6.jpg"
+                                                                <img class="primary-img" src="{% static 'techstore/img/product/mediam/2bg.jpg' %}"
                                                                      alt="Product">
                                                                 <img class="secondary-img"
-                                                                     src="img/product/mediam/4bg.jpg" alt="Product">
+                                                                     src="{% static 'techstore/img/product/mediam/2bg.jpg' %}" alt="Product">
                                                             </a>
                                                         </div>
                                                         <div class="product-description">
@@ -1456,10 +1141,10 @@
                                                         </div>
                                                         <div class="product-img">
                                                             <a href="#">
-                                                                <img class="primary-img" src="img/product/mediam/1.jpg"
+                                                                <img class="primary-img" src="{% static 'techstore/img/product/mediam/2bg.jpg' %}"
                                                                      alt="Product">
                                                                 <img class="secondary-img"
-                                                                     src="img/product/mediam/1bg.jpg" alt="Product">
+                                                                     src="{% static 'techstore/img/product/mediam/2bg.jpg' %}" alt="Product">
                                                             </a>
                                                         </div>
                                                         <div class="product-description">
@@ -1508,10 +1193,10 @@
                                                         </div>
                                                         <div class="product-img">
                                                             <a href="#">
-                                                                <img class="primary-img" src="img/product/mediam/2.jpg"
+                                                                <img class="primary-img" src="{% static 'techstore/img/product/mediam/2bg.jpg' %}"
                                                                      alt="Product">
                                                                 <img class="secondary-img"
-                                                                     src="img/product/mediam/2bg.jpg" alt="Product">
+                                                                     src="{% static 'techstore/img/product/mediam/2bg.jpg' %}" alt="Product">
                                                             </a>
                                                         </div>
                                                         <div class="product-description">
@@ -1557,10 +1242,10 @@
                                                     <div class="single-product">
                                                         <div class="product-img">
                                                             <a href="#">
-                                                                <img class="primary-img" src="img/product/mediam/3.jpg"
+                                                                <img class="primary-img" src="{% static 'techstore/img/product/mediam/2bg.jpg' %}"
                                                                      alt="Product">
                                                                 <img class="secondary-img"
-                                                                     src="img/product/mediam/3bg.jpg" alt="Product">
+                                                                     src="{% static 'techstore/img/product/mediam/2bg.jpg' %}" alt="Product">
                                                             </a>
                                                         </div>
                                                         <div class="product-description">
@@ -1606,10 +1291,10 @@
                                                     <div class="single-product">
                                                         <div class="product-img">
                                                             <a href="#">
-                                                                <img class="primary-img" src="img/product/mediam/4.jpg"
+                                                                <img class="primary-img" src="{% static 'techstore/img/product/mediam/2bg.jpg' %}"
                                                                      alt="Product">
                                                                 <img class="secondary-img"
-                                                                     src="img/product/mediam/4bg.jpg" alt="Product">
+                                                                     src="{% static 'techstore/img/product/mediam/2bg.jpg' %}" alt="Product">
                                                             </a>
                                                         </div>
                                                         <div class="product-description">
@@ -1658,10 +1343,10 @@
                                                         </div>
                                                         <div class="product-img">
                                                             <a href="#">
-                                                                <img class="primary-img" src="img/product/mediam/5.jpg"
+                                                                <img class="primary-img" src="{% static 'techstore/img/product/mediam/2bg.jpg' %}"
                                                                      alt="Product">
                                                                 <img class="secondary-img"
-                                                                     src="img/product/mediam/3bg.jpg" alt="Product">
+                                                                     src="{% static 'techstore/img/product/mediam/2bg.jpg' %}" alt="Product">
                                                             </a>
                                                         </div>
                                                         <div class="product-description">
@@ -6197,11 +5882,11 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-8 col-sm-7 col-xs-12">
-                    <label class="hidden-sm hidden-xs">Sign Up for Our Newsletter:</label>
+                    <label class="hidden-sm hidden-xs">{% trans "Sign Up for Our Newsletter:" %}</label>
                     <div class="subscribe">
                         <form action="#">
                             <input type="text" placeholder="Enter Your E-mail">
-                            <button type="submit">Subscribe</button>
+                            <button type="submit">{% trans "Subscribe" %}</button>
                         </form>
                     </div>
                 </div>
@@ -6222,162 +5907,11 @@
 </section>
 <!-- END HOME-PAGE-CONTENT -->
 <!-- FOOTER-AREA START -->
-<footer class="footer-area">
-    <!-- Footer Start -->
-    <div class="footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-12 col-sm-4 col-md-3">
-                    <div class="footer-title">
-                        <h5>My Account</h5>
-                    </div>
-                    <nav>
-                        <ul class="footer-content">
-                            <li><a href="my-account.html">My Account</a></li>
-                            <li><a href="#">Order History</a></li>
-                            <li><a href="wishlist">Wish List</a></li>
-                            <li><a href="#">Search Terms</a></li>
-                            <li><a href="#">Returns</a></li>
-                        </ul>
-                    </nav>
-                </div>
-                <div class="col-xs-12 col-sm-4 col-md-3">
-                    <div class="footer-title">
-                        <h5>Customer Service</h5>
-                    </div>
-                    <nav>
-                        <ul class="footer-content">
-                            <li><a href="contact.html">Contact Us</a></li>
-                            <li><a href="about.html">About Us</a></li>
-                            <li><a href="#">Delivery Information</a></li>
-                            <li><a href="#">Privacy Policy</a></li>
-                            <li><a href="#">Terms & Conditions</a></li>
-                        </ul>
-                    </nav>
-                </div>
-                <div class="col-xs-12 hidden-sm col-md-3">
-                    <div class="footer-title">
-                        <h5>Payment & Shipping</h5>
-                    </div>
-                    <nav>
-                        <ul class="footer-content">
-                            <li><a href="#">Brands</a></li>
-                            <li><a href="#">Gift Vouchers</a></li>
-                            <li><a href="#">Affiliates</a></li>
-                            <li><a href="shop-list.html">Specials</a></li>
-                            <li><a href="#">Search Terms</a></li>
-                        </ul>
-                    </nav>
-                </div>
-                <div class="col-xs-12 col-sm-4 col-md-3">
-                    <div class="footer-title">
-                        <h5>Payment & Shipping</h5>
-                    </div>
-                    <nav>
-                        <ul class="footer-content box-information">
-                            <li>
-                                <i class="fa fa-home"></i><span>Towerthemes, 1234 Stret Lorem, LPA States, Libero</span>
-                            </li>
-                            <li>
-                                <i class="fa fa-envelope-o"></i>
-                                <p><a href="contact.html">admin@bootexperts.com</a></p>
-                            </li>
-                            <li>
-                                <i class="fa fa-phone"></i>
-                                <span>01234-56789</span> <br> <span> 01234-56789</span>
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Footer End -->
-    <!-- Copyright-area Start -->
-    <div class="copyright-area">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="copyright">
-                        <p>Copyright &copy; Взято с <a href="http://bayguzin.ru" target="_blank"> bayguzin.ru</a> All
-                            rights reserved.</p>
-                        <div class="payment">
-                            <a href="#"><img src="img/payment.png" alt="Payment"></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Copyright-area End -->
-</footer>
+{% include 'layouts/footer.html' %}
 <!-- FOOTER-AREA END -->
 <!-- QUICKVIEW PRODUCT -->
-<div id="quickview-wrapper">
-    <!-- Modal -->
-    <div class="modal fade" id="productModal" tabindex="-1" role="dialog">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
-                            aria-hidden="true">&times;</span></button>
-                </div>
-                <div class="modal-body">
-                    <div class="modal-product">
-                        <div class="product-images">
-                            <div class="main-image images">
-                                <img alt="#" src="img/product/quickview-photo.jpg"/>
-                            </div>
-                        </div><!-- .product-images -->
-
-                        <div class="product-info">
-                            <h1>Aenean eu tristique</h1>
-                            <div class="price-box-3">
-                                <hr/>
-                                <div class="s-price-box">
-                                    <span class="new-price">$160.00</span>
-                                    <span class="old-price">$190.00</span>
-                                </div>
-                                <hr/>
-                            </div>
-                            <a href="shop.html" class="see-all">See all features</a>
-                            <div class="quick-add-to-cart">
-                                <form method="post" class="cart">
-                                    <div class="numbers-row">
-                                        <input type="number" id="french-hens" value="3">
-                                    </div>
-                                    <button class="single_add_to_cart_button" type="submit">Add to cart</button>
-                                </form>
-                            </div>
-                            <div class="quick-desc">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam fringilla augue nec est
-                                tristique auctor. Donec non est at libero.
-                            </div>
-                            <div class="social-sharing">
-                                <div class="widget widget_socialsharing_widget">
-                                    <h3 class="widget-title-modal">Share this product</h3>
-                                    <ul class="social-icons">
-                                        <li><a target="_blank" title="Facebook" href="#" class="facebook social-icon"><i
-                                                class="fa fa-facebook"></i></a></li>
-                                        <li><a target="_blank" title="Twitter" href="#" class="twitter social-icon"><i
-                                                class="fa fa-twitter"></i></a></li>
-                                        <li><a target="_blank" title="Pinterest" href="#" class="pinterest social-icon"><i
-                                                class="fa fa-pinterest"></i></a></li>
-                                        <li><a target="_blank" title="Google +" href="#" class="gplus social-icon"><i
-                                                class="fa fa-google-plus"></i></a></li>
-                                        <li><a target="_blank" title="LinkedIn" href="#" class="linkedin social-icon"><i
-                                                class="fa fa-linkedin"></i></a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div><!-- .product-info -->
-                    </div><!-- .modal-product -->
-                </div><!-- .modal-body -->
-            </div><!-- .modal-content -->
-        </div><!-- .modal-dialog -->
-    </div>
-    <!-- END Modal -->
-</div>
+<!--{% include 'layouts/wrapper.html' %}-->
+<!---->
 <!-- END QUICKVIEW PRODUCT -->
 
 {% include 'base_components/_scripts.html' %}

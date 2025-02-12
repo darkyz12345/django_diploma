@@ -1,0 +1,35 @@
+{% load i18n %}
+{% load static %}
+
+<div class="mobile-menu-area hidden-md hidden-lg">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <nav id="mobile-menu">
+                    <ul>
+                        <li><a href="index.html">{% trans "Home" %}</a>
+                        </li>
+                        <li><a href="about.html">{% trans "About Us" %}</a></li>
+                        <li><a href="shop.html">{% trans "Bestseller Products" %}</a></li>
+                        <li><a href="shop-list.html">{% trans "New Products" %}</a></li>
+                        <li><a href="shop-list.html">{% trans "Special Products" %}</a></li>
+                        <li><a href="#">{% trans "Pages" %}</a>
+                            <ul>
+                                <li><a href="cart.html">{% trans "Cart" %}</a></li>
+                                    <li><a href="checkout.html">{% trans "checkout" %}</a></li>
+                                    <li><a href="account.html">{% trans "create account" %}</a></li>
+                                    <li><a href="login.html">{% trans "login" %}</a></li>
+                                    <li><a href="my-account.html">{% trans "my account" %}</a></li>
+                                    <li><a href="product-details.html">{% trans "product details" %}</a></li>
+                                    <li><a href="shop.html">{% trans "shop grid view" %}</a></li>
+                                    <li><a href="shop-list.html">{% trans "shop list view" %}</a></li>
+                                    <li><a href="wishlist.html">{% trans "wishlist" %}</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="contact.html">{% trans "contact us" %}</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+</div>

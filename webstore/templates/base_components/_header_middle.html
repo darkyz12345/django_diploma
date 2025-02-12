@@ -71,25 +71,14 @@
                         <div class="search-container">
                             <select>
                                 <option class="all-cate">{% trans "categories all" %}</option>
-                                {% if CURRENT_LANG == 'ru' %}
                                 {% for category in parent_categories %}
-                                <optgroup class="cate-item-head" label="{{ category.title_ru }}">
+                                <optgroup class="cate-item-head" label="{{ category.title }}">
                                     {% get_children_categories category.slug as cat %}
                                     {% for c in cat %}
-                                    <option class="cate-item-title">{{ c.title_ru }}</option>
+                                    <option class="cate-item-title">{{ c.title }}</option>
                                     {% endfor %}
                                 </optgroup>
                                 {% endfor %}
-                                {% else %}
-                                {% for category in parent_categories %}
-                                <optgroup class="cate-item-head" label="{{ category.title_en }}">
-                                    {% get_children_categories category.slug as cat %}
-                                    {% for c in cat %}
-                                    <option class="cate-item-title">{{ c.title_en }}</option>
-                                    {% endfor %}
-                                </optgroup>
-                                {% endfor %}
-                                {% endif %}
                             </select>
                         </div>
                         <div class="header-search">
@@ -105,8 +94,8 @@
                                 <a href="cart.html">
                                     <span class="cart-icon"><i class="fa fa-shopping-cart"></i></span>
                                     <span class="cart-total">
-			                    					<span class="cart-title">shopping cart</span>
-				                    				<span class="cart-item">2 item(s)- </span>
+			                    					<span class="cart-title">{% trans "shopping cart" %}</span>
+				                    				<span class="cart-item">2 {% trans "item(s)" %}- </span>
 				                    				<span class="top-cart-price">$365.00</span>
 			                    				</span>
                                 </a>

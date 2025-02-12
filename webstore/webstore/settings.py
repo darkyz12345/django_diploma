@@ -11,6 +11,8 @@ https://docs.djangoproject.com/en/5.1/ref/settings/
 """
 
 from pathlib import Path
+
+from django.conf.global_settings import FIXTURE_DIRS
 from django.utils.translation import gettext_lazy as _
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -42,6 +44,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'modeltranslation',
     'techstore',
     'users',
 ]
@@ -134,6 +137,10 @@ MEDIA_ROOT = BASE_DIR / 'media'
 LOCALE_PATHS = (
     BASE_DIR / 'locale',
 )
+
+FIXTURE_DIRS = [
+    BASE_DIR / 'fixtures',
+]
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field

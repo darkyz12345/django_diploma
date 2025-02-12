@@ -65,6 +65,12 @@ class Product(models.Model):
             return images_tuple[1].image.url
         return images_tuple[0].image.url
 
+    def save(self, *args, **kwargs):
+        self.title_ru = self.title
+        self.title_en = translate(self.title, src='ru', dest='en')
+        self.slug = slugify(self.title_en)
+        super().save(*args, **kwargs)
+
     @property
     def get_price(self):
         if self.discount:
